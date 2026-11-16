@@ -55,7 +55,7 @@ bullet('Selected coursework: Circuit Theory, Electric Machines and Drives, Autom
 
 section('Research')
 story.append(para('<b>Research interests:</b> '+', '.join(p['interests'])+'.'))
-story.append(para('<b>Advisors:</b> Liang Shen (Ph.D. student, Dalian Jiaotong University); Wei Dong (Dean, School of Transportation and Electrical Engineering, Dalian University of Science and Technology).'))
+story.append(para('<b>Research mentors:</b> Liang Shen (former electrical engineering instructor; supervised two papers on motor control and drive circuits); Wei Dong (Dean, School of Transportation and Electrical Engineering, Dalian University of Science and Technology).'))
 row('Rail Surface Defect Detection with Motion Compensation', 'Ongoing')
 bullet('Investigating lightweight segmentation, motion-assisted alignment, and reliability-aware multi-frame fusion for rail surface inspection.')
 bullet('Current evaluation uses real static rail images and controlled synthetic sequences. Real-time performance and field deployment remain to be evaluated.')
