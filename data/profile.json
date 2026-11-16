@@ -1,0 +1,36 @@
+{
+  "name": "Yuting Zou",
+  "name_zh": "邹雨廷",
+  "github": "LevinJustus",
+  "email": "zouryan6@gmail.com",
+  "scholar": "https://scholar.google.com/citations?user=IACW2ooAAAAJ&hl=en",
+  "orcid": "0009-0003-8276-0117",
+  "university": "Dalian University of Science and Technology",
+  "school": "School of Transportation and Electrical Engineering",
+  "major": "Electrical Engineering and Automation",
+  "education_start": "2024.08",
+  "education_end": "2028.06",
+  "gpa": "3.58",
+  "rank": "Top 15%",
+  "advisors": ["Liang Shen (申亮)", "Wei Dong (董玮)"],
+  "interests": ["Motor Control", "Intelligent Control", "Computer Vision"],
+  "publications": [
+    {
+      "title": "L1 Adaptive Iterative Learning Control of Permanent Magnet Synchronous Motor",
+      "authors": "Liang Shen, Yuting Zou",
+      "venue": "CETNT 2025 · Lecture Notes in Electrical Engineering, vol. 1547, pp. 376–383",
+      "year": "2026",
+      "status": "Published",
+      "doi": "10.1007/978-981-95-6837-6_39"
+    },
+    {
+      "title": "Research on Freewheeling Optimization Method for Permanent Magnet Claw-Pole Stepper Motor Drive Circuits",
+      "authors": "Yuting Zou (second author)",
+      "venue": "PSPE 2026 · 5th International Conference on Power Systems and Power Engineering",
+      "year": "2026",
+      "status": "Accepted, forthcoming",
+      "doi": ""
+    }
+  ]
+}
+
