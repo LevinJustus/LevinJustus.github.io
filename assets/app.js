@@ -21,10 +21,10 @@
     themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
     themeButton.setAttribute('aria-pressed', String(dark));
     document.querySelector('meta[name="theme-color"]').content = dark ? '#15171b' : '#faf9f7';
-    save('yz-theme', root.dataset.theme);
+    save('yz-theme-v2', root.dataset.theme);
   }
   language(read('yz-language'));
-  theme(read('yz-theme') || 'dark');
+  theme(read('yz-theme-v2') || 'dark');
   document.querySelectorAll('.visual-toggle').forEach(button => {
     let pinned = false;
     const caption = button.closest('.work-media').querySelector('.image-caption');

@@ -24,3 +24,5 @@ nav a.active{color:var(--accent);box-shadow:0 1px 0 var(--accent)}.experience-no
 :root:not([data-theme=dark]) .work-entry{--entry-ink:color-mix(in srgb,var(--entry-accent) 65%,#142333)}:root:not([data-theme=dark]) .work-entry .status,:root:not([data-theme=dark]) .entry-kicker>span:first-child,:root:not([data-theme=dark]) .contribution-role{color:var(--entry-ink)}
 
 .section{scroll-margin-top:0}.project-group{scroll-margin-top:0}
+
+.inline-link{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:color-mix(in srgb,var(--accent) 50%,transparent);text-underline-offset:4px;transition:text-decoration-color .2s}.inline-link:hover{text-decoration-color:var(--accent)}

@@ -10,11 +10,43 @@ const svg=(inside)=>'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 45
 const text=(x,y,t,size=20,color='#334155',extra='')=>'<text x="'+x+'" y="'+y+'" fill="'+color+'" font-family="Arial,sans-serif" font-size="'+size+'" '+extra+'>'+esc(t)+'</text>';
 function method(e){let c=colors[e.id],s=text(42,52,e.kind==='paper'?'METHOD / '+e.category[0].toUpperCase():'SYSTEM / '+e.category[0].toUpperCase(),17,c)+text(42,84,'From inputs to evaluation',25);e.steps.forEach((p,i)=>{let x=42+(i%2)*350,y=120+Math.floor(i/2)*146;s+='<rect x="'+x+'" y="'+y+'" width="326" height="100" rx="14" fill="white" stroke="'+c+'" stroke-opacity=".45"/>';s+=text(x+22,y+31,'0'+(i+1),16,c)+text(x+22,y+66,p[0],23);if(i===0||i===2)s+='<path d="M'+(x+330)+' '+(y+50)+'h15m-6-6 6 6-6 6" stroke="'+c+'" fill="none" stroke-width="2"/>';if(i===1)s+='<path d="M555 224v17H205v20m-6-6 6 6 6-6" stroke="'+c+'" fill="none" stroke-width="2"/>';});s+=text(42,421,e.id==='rail'?'ALIGNMENT + FUSION: NEXT RESEARCH STAGE':'MODELING  /  IMPLEMENTATION  /  ANALYSIS',14,'#64748b');return svg(s);}
 const rail=svg(text(42,51,'RAIL SURFACE INSPECTION',17,'#52857d')+text(42,87,'Segmentation → alignment → fusion',26)+'<g transform="translate(70 120)"><rect width="270" height="240" rx="16" fill="#e7edf1" stroke="#cbd5e1"/><path d="M55 10v220m14-220v220M206 10v220m14-220v220" stroke="#94a3b8" stroke-width="5"/><path d="m140 27-12 35 21 27-25 31 24 25-18 57" stroke="#64748b" stroke-width="12" fill="none"/><path d="m140 27-12 35 21 27-25 31 24 25-18 57" stroke="#5d9a92" stroke-width="19" stroke-opacity=".4" fill="none"/></g><g fill="white" stroke="#9bbdb6"><rect x="402" y="126" width="292" height="62" rx="12"/><rect x="402" y="215" width="292" height="62" rx="12"/><rect x="402" y="304" width="292" height="62" rx="12"/></g>'+text(425,165,'Lightweight segmentation',20)+text(425,254,'Motion-assisted alignment',20)+text(425,343,'Reliability-aware fusion',20)+'<path d="M548 192v18m-5-5 5 5 5-5M548 281v18m-5-5 5 5 5-5" fill="none" stroke="#5d9a92" stroke-width="2"/>'+text(42,419,'CONCEPTUAL OVERVIEW · ONGOING RESEARCH',14,'#64748b'));
-function vehicle(id){let rescue=id==='rescue',c=rescue?'#bd8d76':'#6891b3';return svg(text(42,51,rescue?'PLC / EMERGENCY DRAINAGE':'STM32 / RAILWAY ENVIRONMENT',17,c)+text(42,87,rescue?'Tracked mobility. Feedback control.':'Sense. Move. Observe.',28)+'<g transform="translate(90 144)"><rect x="38" y="114" width="344" height="83" rx="41" fill="#334155"/><rect x="51" y="128" width="318" height="55" rx="27" fill="#94a3b8"/>'+[83,145,207,269,331].map(x=>'<circle cx="'+x+'" cy="155" r="20" fill="#e2e8f0" stroke="#475569" stroke-width="5"/>').join('')+'<path d="M43 107V47h343v60Z" fill="'+c+'" stroke="#475569" stroke-width="2"/><rect x="100" y="14" width="122" height="66" rx="8" fill="white" stroke="#475569" stroke-width="2"/>'+text(161,56,rescue?'S7-1200':'STM32',19,'#334155','text-anchor="middle"')+(rescue?'<circle cx="307" cy="50" r="36" fill="#cbd5e1" stroke="#475569" stroke-width="5"/><circle cx="307" cy="50" r="14" fill="#64748b"/><path d="M337 31h47v-35h33" fill="none" stroke="#64748b" stroke-width="13"/>':'<path d="M288 47V-7h26" fill="none" stroke="#475569" stroke-width="6"/><rect x="282" y="-25" width="59" height="40" rx="6" fill="#334155"/><circle cx="318" cy="-5" r="12" fill="#a9c4d5"/>')+'</g><g fill="white" stroke="'+c+'" stroke-opacity=".5"><rect x="525" y="142" width="190" height="56" rx="10"/><rect x="525" y="219" width="190" height="56" rx="10"/><rect x="525" y="296" width="190" height="56" rx="10"/></g>'+text(544,177,rescue?'Level + tilt':'Environment',20)+text(544,254,rescue?'Pump control':'Wireless control',20)+text(544,331,rescue?'Safety interlocks':'Live video',20)+text(42,419,'SYSTEM ILLUSTRATION',14,'#64748b'));}
+function vehicle(id){
+ const rescue=id==='rescue',accent=rescue?'#af795f':'#597f9e',faint=rescue?'#f5ede7':'#eaf0f5';
+ const box=(x,y,w,h,title,sub,fill='#fff',stroke='#d4dce5',ink='#334155')=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="8" fill="'+fill+'" stroke="'+stroke+'"/>'+text(x+w/2,y+h/2-2,title,22,ink,'text-anchor="middle"')+(sub?text(x+w/2,y+h/2+25,sub,16,fill===accent?'#ffffffcc':'#788595','text-anchor="middle"'):'');
+ const wire=(d)=>'<path d="'+d+'" fill="none" stroke="'+accent+'" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>';
+ let s='<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="'+accent+'" stroke-width="1.2"/></marker></defs>';
+ s+=text(35,44,rescue?'EMERGENCY DRAINAGE':'RAILWAY ENVIRONMENT',17,accent)+text(35,78,'System overview',27,'#263544');
+ s+='<path d="M35 96H725" stroke="#dce3ea"/>';
+ if(rescue){
+  s+=box(35,132,190,84,'Sensor inputs','Level · tilt · current');
+  s+=box(281,152,190,112,'S7-1200','PLC controller',accent,accent,'#fff');
+  s+=box(530,130,195,74,'Track drive','Differential motion');
+  s+=box(530,234,195,74,'Drainage pump','Start / stop');
+  s+=wire('M225 174H252V194H281')+wire('M471 192H501V167H530')+wire('M471 222H501V271H530');
+  s+=box(35,258,190,71,'Remote control','Command input',faint,'#d6c7bc');
+  s+=wire('M225 291H252V230H281');
+  s+='<path d="M630 316V363H377V271" fill="none" stroke="'+accent+'" stroke-width="1.8" stroke-dasharray="5 5" marker-end="url(#arrow)"/>';
+  s+=text(501,386,'Protective interlocks & feedback',17,accent,'text-anchor="middle"');
+ }else{
+  s+=box(35,132,190,84,'Environment','T / RH · air · pressure');
+  s+=box(281,152,190,112,'STM32','Embedded controller',accent,accent,'#fff');
+  s+=box(530,132,195,74,'Motor drive','Vehicle motion');
+  s+=box(530,236,195,74,'OLED + alerts','Local status');
+  s+=wire('M225 174H252V194H281')+wire('M471 192H501V169H530')+wire('M471 222H501V273H530');
+  s+=box(35,258,190,71,'Bluetooth','Wireless commands',faint,'#c9d8e4');
+  s+=wire('M225 291H252V230H281');
+  s+=box(35,356,190,56,'ESP32-CAM','',faint,'#c9d8e4');
+  s+=wire('M225 384H530');
+  s+=text(377,373,'Wi-Fi video',16,accent,'text-anchor="middle"');
+  s+=box(530,356,195,56,'Remote viewer','');
+ }
+ s+=text(35,436,'SCHEMATIC · NOT TO SCALE',12,'#8995a2');
+ return svg(s);
+}
 await fs.mkdir(path.join(root,'assets/work'),{recursive:true});
 await fs.writeFile(path.join(root,'assets/work/rail-overview.svg'),rail);
-await fs.writeFile(path.join(root,'assets/work/inspection-overview.svg'),vehicle('inspection'));
-await fs.writeFile(path.join(root,'assets/work/rescue-overview.svg'),vehicle('rescue'));
+await fs.writeFile(path.join(root,'assets/work/inspection-overview-v2.svg'),vehicle('inspection'));
+await fs.writeFile(path.join(root,'assets/work/rescue-overview-v2.svg'),vehicle('rescue'));
 function card(e){let diagram='assets/work/'+e.id+'-method.svg';return '<article id="work-'+e.id+'" class="work-entry" style="--entry-accent:'+colors[e.id]+'">'+
 '<div class="work-row"><div class="work-media"><button type="button" class="visual-toggle" aria-label="Toggle overview and method for '+esc(e.title[0])+'" aria-pressed="false"><span class="image-stack"><img class="overview-image" src="assets/work/'+e.image+'" width="760" height="450" loading="lazy" alt="'+esc(e.imageAlt)+'"><img class="method-image" aria-hidden="true" src="'+diagram+'" width="760" height="450" loading="lazy" alt="'+esc(e.steps.map(s=>s[0]).join(' → '))+'"></span><span class="visual-cue" aria-hidden="true"><span class="cue-overview">'+bi('span',['↗ Explore method','↗ 查看方法'])+'</span><span class="cue-method">'+bi('span',['↙ Back to overview','↙ 返回概览'])+'</span></span></button>'+bi('p',e.caption,'image-caption')+'</div>'+
 '<div class="work-copy"><div class="entry-kicker">'+bi('span',e.category)+'<span aria-hidden="true"> / </span><span>'+esc(e.year)+'</span></div>'+bi('h3',e.title)+

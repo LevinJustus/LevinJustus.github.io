@@ -239,11 +239,11 @@
       "Embedded systems",
       "嵌入式系统"
     ],
-    "image": "inspection-overview.svg",
-    "imageAlt": "Conceptual STM32 inspection robot with sensing and wireless video modules",
+    "image": "inspection-overview-v2.svg",
+    "imageAlt": "System schematic connecting environmental sensing, STM32 control, drive, display and wireless video",
     "caption": [
-      "System concept",
-      "系统示意"
+      "System schematic",
+      "系统示意图"
     ],
     "summary": [
       "A compact mobile platform combining environmental sensing, wireless control, and ESP32-CAM video for auxiliary railway inspection.",
@@ -377,11 +377,11 @@
       "Automation",
       "自动化"
     ],
-    "image": "rescue-overview.svg",
-    "imageAlt": "Conceptual tracked drainage vehicle with pump, PLC and level sensing",
+    "image": "rescue-overview-v2.svg",
+    "imageAlt": "System schematic connecting sensor inputs and remote control to the PLC, track drive and drainage pump",
     "caption": [
-      "Vehicle concept",
-      "整车方案示意"
+      "System schematic",
+      "系统示意图"
     ],
     "summary": [
       "A PLC-controlled tracked drainage prototype integrating water-level feedback, terrain mobility, and protective control logic.",
@@ -424,8 +424,8 @@
       ]
     ],
     "note": [
-      "Physical prototype completed and functionally tested. The cover is a system illustration; field performance remains a separate evaluation.",
-      "已完成实物并开展功能测试。封面为系统示意图，现场工况性能需另行评价。"
+      "Physical prototype completed and functionally tested. The cover summarizes the control architecture.",
+      "已完成实物并开展功能测试，封面展示控制系统结构。"
     ],
     "links": []
   }
