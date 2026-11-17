@@ -63,11 +63,14 @@ bullet('Current evaluation uses real static rail images and controlled synthetic
 section('Publications & Presentations')
 story.append(para('[1] Liang Shen, <b>Yuting Zou</b>. <b>'+escape(p['publications'][0]['title'])+'</b>. In: <i>The Proceedings of 2025 Annual National Conference of Electrical Theory and New Technologies</i> (CETNT 2025), LNEE 1547, pp. 376–383. Springer, 2026. <link href="https://doi.org/'+p['publications'][0]['doi']+'">DOI: '+p['publications'][0]['doi']+'</link>.'))
 story.append(Spacer(1, 3))
-story.append(para('[2] <b>'+escape(p['publications'][1]['title'])+'</b>. PSPE 2026. <b>Accepted, forthcoming; second author.</b> Presented at the 5th International Conference on Power Systems and Power Engineering.'))
+story.append(para('[2] Liang Shen, <b>Yuting Zou</b>, Luqing Jia, Xinyi Huang. <b>'+escape(p['publications'][1]['title'])+'</b>. PSPE 2026. <b>Accepted, forthcoming; second author.</b> Presented at the 5th International Conference on Power Systems and Power Engineering.'))
 
 section('Experience')
 row('SKF (Dalian) | Quality Department Intern', '2026.07 – 2026.08')
 bullet('Supported quality operations, quality data migration, and documentation involving inspection cards and control plans.')
+
+row("Founder | Qingyu Wu'an (Dalian) Network Technology Co., Ltd.", '2024')
+bullet('Founded and registered an internet technology venture; gained early-stage entrepreneurship experience. The company has since been deregistered.')
 
 section('Selected Honors & Awards')
 bullet('<b>National Second Prize</b>, National College Business Elite Challenge, Innovation &amp; Entrepreneurship, Entrepreneurship Simulation Track (2025).')

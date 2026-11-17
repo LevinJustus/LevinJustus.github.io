@@ -1,0 +1,432 @@
+[
+  {
+    "id": "pmsm",
+    "kind": "paper",
+    "title": [
+      "L1 Adaptive Iterative Learning Control of Permanent Magnet Synchronous Motor",
+      "永磁同步电动机的 L1 自适应迭代学习控制"
+    ],
+    "year": "2026",
+    "tag": [
+      "Published · CETNT 2025",
+      "已出版 · CETNT 2025"
+    ],
+    "category": [
+      "Motor control",
+      "电机控制"
+    ],
+    "image": "pmsm-result.png",
+    "imageAlt": "Root mean square position error against learning iterations, from the PMSM paper",
+    "caption": [
+      "Learning convergence",
+      "迭代收敛曲线"
+    ],
+    "authors": "Liang Shen, <strong>Yuting Zou</strong>",
+    "venue": "Lecture Notes in Electrical Engineering, vol. 1547, pp. 376–383, 2026",
+    "summary": [
+      "Combining fast adaptive feedback with iterative feedforward learning for precise PMSM position tracking under dynamic and repetitive uncertainties.",
+      "将快速自适应反馈与迭代前馈学习结合，改善动态参数变化及重复扰动下的永磁同步电机位置跟踪。"
+    ],
+    "role": [
+      "Second author · Principal contributor",
+      "第二作者 · 主要完成人"
+    ],
+    "bullets": [
+      [
+        "Developed the PMSM modeling and analysis around friction, cogging torque, and time-varying parameter uncertainties.",
+        "围绕摩擦、齿槽转矩及动态参数不确定性，开展永磁同步电机建模与分析。"
+      ],
+      [
+        "Worked on the parallel L1 adaptive feedback and ILC feedforward structure, including the filter and convergence analysis.",
+        "完成 L1 自适应反馈与 ILC 前馈并行结构的研究，分析滤波器与迭代收敛条件。"
+      ],
+      [
+        "Carried out the tracking comparisons and analyzed position-error and RMS-error curves across learning iterations.",
+        "开展位置跟踪对比，分析误差曲线及各迭代轮次的均方根误差。"
+      ]
+    ],
+    "steps": [
+      [
+        "PMSM model",
+        "电机建模"
+      ],
+      [
+        "L1 feedback",
+        "自适应反馈"
+      ],
+      [
+        "ILC feedforward",
+        "迭代前馈"
+      ],
+      [
+        "Tracking analysis",
+        "跟踪对比"
+      ]
+    ],
+    "note": [
+      "The adaptive loop handles time-domain uncertainty; the learning loop compensates repeatable effects across trials.",
+      "自适应环处理时间域不确定性，学习环利用重复运行信息补偿重复性影响。"
+    ],
+    "links": [
+      [
+        "Paper ↗",
+        "https://doi.org/10.1007/978-981-95-6837-6_39"
+      ],
+      [
+        "BibTeX ↓",
+        "files/publications.bib"
+      ]
+    ]
+  },
+  {
+    "id": "stepper",
+    "kind": "paper",
+    "title": [
+      "Research on Freewheeling Optimization Method for Permanent Magnet Claw-Pole Stepper Motor Drive Circuits",
+      "永磁爪极步进电机驱动电路续流优化方法研究"
+    ],
+    "year": "2026",
+    "tag": [
+      "Accepted · PSPE 2026",
+      "已录用 · PSPE 2026"
+    ],
+    "category": [
+      "Motor drives",
+      "电机驱动"
+    ],
+    "image": "stepper-result.jpeg",
+    "imageAlt": "Dynamic torque waveform from the freewheeling optimization paper",
+    "caption": [
+      "Dynamic torque response",
+      "动态转矩响应"
+    ],
+    "authors": "Liang Shen, <strong>Yuting Zou</strong>, Luqing Jia, Xinyi Huang",
+    "venue": "5th International Conference on Power Systems and Power Engineering · Forthcoming",
+    "summary": [
+      "Optimizing the freewheeling path to accelerate winding-current decay and improve commutation behavior without changing the motor structure.",
+      "通过优化续流通路加快绕组电流衰减，在不改变电机结构的条件下改善换相与动态运行性能。"
+    ],
+    "role": [
+      "Second author · Principal contributor",
+      "第二作者 · 主要完成人"
+    ],
+    "bullets": [
+      [
+        "Investigated how winding coupling, freewheeling current, and rotation-induced EMF affect the commutation process.",
+        "分析绕组耦合、续流电流及旋转感应电动势对换相过程的影响。"
+      ],
+      [
+        "Worked on the drive-circuit model and resistor-based freewheeling optimization, supported by Maxwell 3D and PSIM analysis.",
+        "开展驱动电路建模及电阻续流优化，结合 Maxwell 3D 与 PSIM 分析。"
+      ],
+      [
+        "Compared current-decay and dynamic-torque behavior at different excitation rates, and prepared the PSPE presentation.",
+        "对比不同驱动频率下的电流衰减与动态转矩表现，并完成 PSPE 会议报告。"
+      ]
+    ],
+    "steps": [
+      [
+        "Coupled windings",
+        "绕组耦合"
+      ],
+      [
+        "Freewheeling model",
+        "续流建模"
+      ],
+      [
+        "Resistor selection",
+        "电阻优化"
+      ],
+      [
+        "Torque comparison",
+        "转矩对比"
+      ]
+    ],
+    "note": [
+      "Accepted for publication. The current validation is theoretical and simulation-based; practical-platform experiments remain future work.",
+      "论文已录用待出版。目前验证以理论与仿真为主，实际电机平台实验仍是后续工作。"
+    ],
+    "links": []
+  },
+  {
+    "id": "rail",
+    "kind": "project",
+    "group": "ongoing",
+    "title": [
+      "Rail Surface Defect Segmentation with Motion Compensation",
+      "结合运动补偿的钢轨表面缺陷分割"
+    ],
+    "year": "Ongoing",
+    "tag": [
+      "Ongoing research",
+      "在研"
+    ],
+    "category": [
+      "Computer vision",
+      "计算机视觉"
+    ],
+    "image": "rail-overview.svg",
+    "imageAlt": "Conceptual rail surface segmentation and motion alignment illustration",
+    "caption": [
+      "Research overview",
+      "研究示意"
+    ],
+    "summary": [
+      "Building a reproducible lightweight segmentation pipeline, then investigating motion-assisted alignment and reliability-aware multi-frame fusion.",
+      "构建可复现的轻量化分割流程，进一步研究运动信息辅助对齐与可靠性驱动的多帧融合。"
+    ],
+    "role": [
+      "Research lead",
+      "研究主要负责人"
+    ],
+    "bullets": [
+      [
+        "Established data auditing, fixed train/validation partitions, and reproducible experiment configurations.",
+        "建立数据审计、固定训练与验证分区，以及可复现的实验配置。"
+      ],
+      [
+        "Implemented and compared a compact U-Net and a MobileNetV2–DeepLabv3+ baseline across three predefined seeds.",
+        "实现小型 U-Net 与 MobileNetV2–DeepLabv3+ 基线，完成三个预定种子的对照。"
+      ],
+      [
+        "Built controlled motion sequences with imperfect motion observations and isolated evaluation ground truth; preparing alignment and fusion ablations.",
+        "构建带有不完美运动观测的受控序列，将评价真值与算法输入隔离，准备配准和融合消融。"
+      ]
+    ],
+    "steps": [
+      [
+        "Data & segmentation",
+        "数据与分割"
+      ],
+      [
+        "Motion observations",
+        "运动观测"
+      ],
+      [
+        "Alignment",
+        "帧间配准"
+      ],
+      [
+        "Reliable fusion",
+        "可靠融合"
+      ]
+    ],
+    "note": [
+      "Completed: data audit, single-frame baselines, and controlled sequence generation. Alignment/fusion gains, real-video tests, and hardware real-time performance are still to be evaluated.",
+      "已完成数据审计、单帧基线及受控序列生成。配准与融合收益、真实视频测试和硬件实时性能仍待验证。"
+    ],
+    "links": [
+      [
+        "Code ↗",
+        "https://github.com/LevinJustus/rail-surface-motion-research"
+      ]
+    ]
+  },
+  {
+    "id": "inspection",
+    "kind": "project",
+    "group": "engineering",
+    "title": [
+      "STM32 Railway Environment Inspection Robot",
+      "基于 STM32 的铁路轨道环境巡检智能小车"
+    ],
+    "year": "2026",
+    "tag": [
+      "Laboratory project",
+      "实验室项目"
+    ],
+    "category": [
+      "Embedded systems",
+      "嵌入式系统"
+    ],
+    "image": "inspection-overview.svg",
+    "imageAlt": "Conceptual STM32 inspection robot with sensing and wireless video modules",
+    "caption": [
+      "System concept",
+      "系统示意"
+    ],
+    "summary": [
+      "A compact mobile platform combining environmental sensing, wireless control, and ESP32-CAM video for auxiliary railway inspection.",
+      "将环境感知、无线控制及 ESP32-CAM 视频集成到小型移动平台，用于铁路环境辅助巡检。"
+    ],
+    "role": [
+      "Project lead · Principal contributor",
+      "项目主要负责人"
+    ],
+    "bullets": [
+      [
+        "Led the modular system design around STM32F103C8T6, motor control, environmental sensing, and power distribution.",
+        "主要负责以 STM32F103C8T6 为核心的模块化设计，统筹电机控制、环境感知和供电。"
+      ],
+      [
+        "Integrated sensor acquisition, OLED status display, Bluetooth commands, and abnormal-state alerts into the control workflow.",
+        "整合传感采集、OLED 状态显示、蓝牙指令与异常提示的控制流程。"
+      ],
+      [
+        "Organized the ESP32-CAM video link and the system-level integration and project documentation.",
+        "统筹 ESP32-CAM 视频链路、系统集成与项目资料整理。"
+      ]
+    ],
+    "steps": [
+      [
+        "Sense & acquire",
+        "感知采集"
+      ],
+      [
+        "STM32 processing",
+        "主控处理"
+      ],
+      [
+        "Motion & alerts",
+        "运动与告警"
+      ],
+      [
+        "Remote monitoring",
+        "远程监控"
+      ]
+    ],
+    "note": [
+      "STM32 coordinates sensing, motion, and alerts; ESP32-CAM provides a separate wireless video link.",
+      "STM32 协调感知、运动与告警，ESP32-CAM 提供独立的无线视频链路。"
+    ],
+    "links": []
+  },
+  {
+    "id": "flood",
+    "kind": "project",
+    "group": "engineering",
+    "title": [
+      "Road Flood Monitoring & Traffic Diversion System",
+      "道路积水监测与车流优化调度系统"
+    ],
+    "year": "2025",
+    "tag": [
+      "Demonstration prototype",
+      "演示原型"
+    ],
+    "category": [
+      "Embedded systems",
+      "嵌入式系统"
+    ],
+    "image": "flood-prototype.jpeg",
+    "imageAlt": "Road flood monitoring demonstration model with LED warning display",
+    "caption": [
+      "Demonstration prototype",
+      "演示原型"
+    ],
+    "summary": [
+      "An Arduino-based warning system that translates water-level measurements into roadside LED messages and remote alerts for traffic diversion.",
+      "以 Arduino 将水位监测结果转换为路侧点阵屏提示与远程报警，辅助积水预警和车辆绕行。"
+    ],
+    "role": [
+      "Project lead · Principal contributor",
+      "项目主要负责人"
+    ],
+    "bullets": [
+      [
+        "Led the sensing-to-warning architecture and selected the water-level, display, relay, and communication modules.",
+        "主要负责从监测到预警的系统架构，选择水位、显示、继电器与通信模块。"
+      ],
+      [
+        "Developed the threshold-based control logic linking analog water readings to display messages and the integrated GPRS/WeChat alarm unit.",
+        "完成模拟水位信号到阈值判断、点阵屏信息及集成 GPRS/微信报警模块的联动逻辑。"
+      ],
+      [
+        "Coordinated module testing, system integration, and the road-and-water demonstration model, including the solar-assisted power design.",
+        "统筹模块测试、整机集成与道路积水演示模型，并整合太阳能辅助供电方案。"
+      ]
+    ],
+    "steps": [
+      [
+        "Water-level sensing",
+        "水位监测"
+      ],
+      [
+        "Threshold decision",
+        "阈值判断"
+      ],
+      [
+        "LED & remote alerts",
+        "显示与远程报警"
+      ],
+      [
+        "Diversion guidance",
+        "绕行提示"
+      ]
+    ],
+    "note": [
+      "Validated through module tests and a tabletop road-and-water demonstration model.",
+      "通过模块测试与桌面道路积水模型开展功能演示。"
+    ],
+    "links": []
+  },
+  {
+    "id": "rescue",
+    "kind": "project",
+    "group": "engineering",
+    "title": [
+      "PLC-Controlled Tracked Emergency Drainage Vehicle",
+      "基于 PLC 控制的智能多地形履带式应急排水抢险车"
+    ],
+    "year": "2026",
+    "tag": [
+      "Built & functionally tested",
+      "已完成实物与功能测试"
+    ],
+    "category": [
+      "Automation",
+      "自动化"
+    ],
+    "image": "rescue-overview.svg",
+    "imageAlt": "Conceptual tracked drainage vehicle with pump, PLC and level sensing",
+    "caption": [
+      "Vehicle concept",
+      "整车方案示意"
+    ],
+    "summary": [
+      "A PLC-controlled tracked drainage prototype integrating water-level feedback, terrain mobility, and protective control logic.",
+      "完成以 PLC 为核心的履带式排水原型，集成水位反馈、多地形行走与安全保护控制。"
+    ],
+    "role": [
+      "Project lead · Principal contributor",
+      "项目主要负责人"
+    ],
+    "bullets": [
+      [
+        "Led the overall vehicle and control architecture, including the tracked chassis, pump arrangement, and modular component selection.",
+        "主要负责整车与控制架构，统筹履带底盘、排水泵布置与模块选型。"
+      ],
+      [
+        "Designed the S7-1200 control workflow for level-based pump operation, differential drive, and sensor feedback.",
+        "设计 S7-1200 控制流程，涵盖水位驱动启停、差速行走及传感反馈。"
+      ],
+      [
+        "Integrated the prototype, carried out functional tests, and developed protective logic for overload, excessive tilt, and communication loss.",
+        "完成实物集成与功能测试，设计过载、倾角异常和通信失联等保护逻辑。"
+      ]
+    ],
+    "steps": [
+      [
+        "Level / tilt / current",
+        "水位·倾角·电流"
+      ],
+      [
+        "PLC decision logic",
+        "PLC 逻辑判断"
+      ],
+      [
+        "Tracks & pump",
+        "履带与排水泵"
+      ],
+      [
+        "Protection & feedback",
+        "保护与反馈"
+      ]
+    ],
+    "note": [
+      "Physical prototype completed and functionally tested. The cover is a system illustration; field performance remains a separate evaluation.",
+      "已完成实物并开展功能测试。封面为系统示意图，现场工况性能需另行评价。"
+    ],
+    "links": []
+  }
+]

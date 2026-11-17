@@ -12,8 +12,15 @@
   "education_end": "2028.06",
   "gpa": "3.58",
   "rank": "Top 15%",
-  "advisors": ["Liang Shen (申亮)", "Wei Dong (董玮)"],
-  "interests": ["Motor Control", "Intelligent Control", "Computer Vision"],
+  "advisors": [
+    "Liang Shen (申亮)",
+    "Wei Dong (董玮)"
+  ],
+  "interests": [
+    "Motor Control",
+    "Intelligent Control",
+    "Computer Vision"
+  ],
   "publications": [
     {
       "title": "L1 Adaptive Iterative Learning Control of Permanent Magnet Synchronous Motor",
@@ -25,12 +32,22 @@
     },
     {
       "title": "Research on Freewheeling Optimization Method for Permanent Magnet Claw-Pole Stepper Motor Drive Circuits",
-      "authors": "Yuting Zou (second author)",
+      "authors": [
+        "Liang Shen",
+        "Yuting Zou",
+        "Luqing Jia",
+        "Xinyi Huang"
+      ],
       "venue": "PSPE 2026 · 5th International Conference on Power Systems and Power Engineering",
       "year": "2026",
       "status": "Accepted, forthcoming",
       "doi": ""
     }
-  ]
+  ],
+  "entrepreneurship": {
+    "year": "2024",
+    "role": "Founder",
+    "name_zh": "清雨梧安（大连）网络互联科技有限公司",
+    "status": "Deregistered"
+  }
 }
-
