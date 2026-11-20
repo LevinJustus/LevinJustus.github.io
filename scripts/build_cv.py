@@ -63,7 +63,7 @@ bullet('Current evaluation uses real static rail images and controlled synthetic
 section('Publications & Presentations')
 story.append(para('[1] Liang Shen, <b>Yuting Zou</b>. <b>'+escape(p['publications'][0]['title'])+'</b>. In: <i>The Proceedings of 2025 Annual National Conference of Electrical Theory and New Technologies</i> (CETNT 2025), LNEE 1547, pp. 376–383. Springer, 2026. <link href="https://doi.org/'+p['publications'][0]['doi']+'">DOI: '+p['publications'][0]['doi']+'</link>.'))
 story.append(Spacer(1, 3))
-story.append(para('[2] Liang Shen, <b>Yuting Zou</b>, Luqing Jia, Xinyi Huang. <b>'+escape(p['publications'][1]['title'])+'</b>. PSPE 2026. <b>Accepted, forthcoming; second author.</b> Presented at the 5th International Conference on Power Systems and Power Engineering.'))
+story.append(para('[2] Liang Shen, <b>Yuting Zou</b>, Luqing Jia, Xinyi Huang. <b>'+escape(p['publications'][1]['title'])+'</b>. In: <i>'+escape(p['publications'][1]['venue'])+'</i>, pp. '+p['publications'][1]['pages']+'. IEEE, '+p['publications'][1]['year']+'. <link href="https://doi.org/'+p['publications'][1]['doi']+'">DOI: '+p['publications'][1]['doi']+'</link>.'))
 
 section('Experience')
 row('SKF (Dalian) | Quality Department Intern', '2026.07 – 2026.08')

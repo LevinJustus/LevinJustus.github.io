@@ -87,8 +87,8 @@
     ],
     "year": "2026",
     "tag": [
-      "Accepted · PSPE 2026",
-      "已录用 · PSPE 2026"
+      "Published · PSPE 2026",
+      "已出版 · PSPE 2026"
     ],
     "category": [
       "Motor drives",
@@ -101,7 +101,7 @@
       "动态转矩响应"
     ],
     "authors": "Liang Shen, <strong>Yuting Zou</strong>, Luqing Jia, Xinyi Huang",
-    "venue": "5th International Conference on Power Systems and Power Engineering · Forthcoming",
+    "venue": "2026 5th International Conference on Power System and Power Engineering (PSPE) · IEEE, pp. 198–201, 2026",
     "summary": [
       "Optimizing the freewheeling path to accelerate winding-current decay and improve commutation behavior without changing the motor structure.",
       "通过优化续流通路加快绕组电流衰减，在不改变电机结构的条件下改善换相与动态运行性能。"
@@ -143,10 +143,19 @@
       ]
     ],
     "note": [
-      "Accepted for publication. The current validation is theoretical and simulation-based; practical-platform experiments remain future work.",
-      "论文已录用待出版。目前验证以理论与仿真为主，实际电机平台实验仍是后续工作。"
+      "Published in the IEEE PSPE 2026 proceedings. The current validation is theoretical and simulation-based; practical-platform experiments remain future work.",
+      "已在 IEEE PSPE 2026 论文集中出版。目前验证以理论与仿真为主，实际电机平台实验仍是后续工作。"
     ],
-    "links": []
+    "links": [
+      [
+        "DOI",
+        "https://doi.org/10.1109/PSPE71359.2026.11780851"
+      ],
+      [
+        "BibTeX",
+        "files/publications.bib"
+      ]
+    ]
   },
   {
     "id": "rail",
